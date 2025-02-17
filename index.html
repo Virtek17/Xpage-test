@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__main">
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                <img
+                  src="./src/assets/logo.svg"
+                  alt="Логотип"
+                  class="header__logo-image"
+                />
+              </a>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Играть</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Смотреть</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Учиться</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Мероприятия</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__controls">
+            <div class="header__menu">
+              <button class="burger" aria-label="Открыть меню">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </button>
+              <span class="header__menu-text">Меню</span>
+            </div>
+            <div class="header__profile">
+              <div class="header__profile-name">Геннадий П.</div>
+              <div class="header__profile-avatar">
+                <img
+                  src="./src/assets/avatar.webp"
+                  alt="Аватар"
+                  class="header__profile-avatar-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+            <h1 class="hero__title">Найди с кем поиграть в баскет</h1>
+            <div class="hero__buttons">
+              <button data-index="0">Играй</button>
+              <button data-index="1">Учись</button>
+              <button data-index="2">Смотри</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="play">
+          <div class="container">
+            <div class="play__header block-header">
+              <h2 class="title">Играй</h2>
+              <button>
+                В раздел
+                <img
+                  src="./src/assets/right_arrow__orange.svg"
+                  alt="right_arrow"
+                />
+              </button>
+            </div>
+            <div class="play__cards">
+              <div class="play__card">
+                <div class="play__card-img">
+                  <img src="./src/assets/card_1.webp" alt="card_image" />
+                </div>
+                <div class="play__card-content">
+                  <h3 class="play__card-title">Найди себе<br />команду</h3>
+                  <div class="play__card-subtitle">
+                    Игры на районе - это возможность найти с кем поиграть в
+                    баскетбол в выходные, или создать свою игру и пригласить
+                    других игроков присоединиться.
+                  </div>
+                </div>
+                <button class="play__card-btn">
+                  <div class="play__card-btn-text">Текст кнопки</div>
+                  <img
+                    src="./src/assets/right_arrow.svg"
+                    alt=""
+                    class="play__card-btn-arrow"
+                  />
+                </button>
+              </div>
+
+              <div class="play__card">
+                <div class="play__card-img right">
+                  <img
+                    src="./src/assets/basketball_ball.webp"
+                    alt="card_image"
+                  />
+                </div>
+                <div class="play__card-content">
+                  <h3 class="play__card-title">Создавай<br />команды</h3>
+                  <div class="play__card-subtitle">
+                    Игры на районе - это возможность найти с кем поиграть в
+                    баскетбол в выходные, или создать свою игру и пригласить
+                    других игроков присоединиться.
+                  </div>
+                </div>
+                <button class="play__card-btn">
+                  <div class="play__card-btn-text">Текст кнопки</div>
+                  <img
+                    src="./src/assets/right_arrow.svg"
+                    alt=""
+                    class="play__card-btn-arrow"
+                  />
+                </button>
+              </div>
+
+              <div class="play__card">
+                <div class="play__card-img">
+                  <img src="./src/assets/card_2.webp" alt="card_image" />
+                </div>
+                <div class="play__card-content">
+                  <h3 class="play__card-title">Участвуй<br />в турнирах</h3>
+                  <div class="play__card-subtitle">
+                    Участвуйте в турнирах вместе с вашей командой. Будьте
+                    активными, побеждайте и получайте ачивки и призы от наших
+                    спонсоров.
+                  </div>
+                </div>
+                <button class="play__card-btn">
+                  <div class="play__card-btn-text">Текст кнопки</div>
+                  <img
+                    src="./src/assets/right_arrow.svg"
+                    alt=""
+                    class="play__card-btn-arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="learn">
+          <div class="container">
+            <div class="block-header">
+              <h2 class="title">Учись</h2>
+              <button>
+                В раздел
+                <img
+                  src="./src/assets/right_arrow__green.svg"
+                  alt="right_arrow"
+                />
+              </button>
+            </div>
+            <div class="learn__content">
+              <div class="learn__content_info">
+                <div class="banner-1">
+                  <h3 class="banner_title">
+                    Мы собрали<br />секции для детей<br />по всегму городу
+                  </h3>
+                  <div class="tag tag-white">12 секций по всему городу</div>
+                </div>
+                <div class="banner-2">
+                  <h3 class="banner_title">
+                    Подбери тренера<br />под свой уровень
+                  </h3>
+                  <div class="learn__tags">
+                    <div class="tag tag-gray">детская тренировка</div>
+                    <div class="tag tag-gray">для начинающих</div>
+                    <div class="tag tag-gray">стритбол</div>
+                    <div class="tag tag-gray">выезд тренера на дом</div>
+                    <div class="tag tag-white">12 фильтров</div>
+                  </div>
+                </div>
+              </div>
+              <aside class="learn__content_sidebar">
+                <div class="learn__banner">
+                  <h4><a href="#">Видеоуроки</a></h4>
+                  <div class="learn__banner_preview_video">
+                    <img
+                      class="video"
+                      src="./src/assets/video-preview.webp"
+                      alt="video preview"
+                    />
+                    <div class="learn__banner-text">
+                      <p>
+                        Евгений&nbsp;Воронов: «Бронзовые&nbsp;медали&nbsp;-
+                        оценка труда нашей команды»
+                      </p>
+                      <div class="tag tag-gray2">26 октября</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="learn__banner">
+                  <h4><a href="#">Статьи</a></h4>
+                  <div class="learn__banner-text">
+                    <p>
+                      Евгений&nbsp;Воронов: «Бронзовые <br />
+                      медали - оценка труда нашей <br />
+                      команды»
+                    </p>
+                    <div class="tag tag-gray2">26 октября</div>
+                  </div>
+                </div>
+                <div class="learn__banner">
+                  <h4><a href="#">Термины</a></h4>
+                  <div class="learn__banner-text">
+                    <div class="learn__tags">
+                      <div class="tag tag-gray2">Треха</div>
+                      <div class="tag tag-gray2">терхочковый бросок</div>
+                      <div class="tag tag-black">36 терминов</div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">
+            Еще больше полезных<br />материалов и<br />видеоуроков<br />в нашем
+            приложении
+          </h2>
+          <div class="download-links">
+            <a href="#">
+              <img src="./src/assets/appStore.svg" alt="Скачать в App Store" />
+            </a>
+            <a href="#">
+              <img
+                src="./src/assets/GooglePlay.svg"
+                alt="Скачать в Google Play"
+              />
+            </a>
+          </div>
+          <div class="QR-banner">
+            <div class="QR-banner__content">
+              <img src="./src/assets/qrCode.png" alt="QR-код для скачивания" />
+              <p class="platform">iOS / Android</p>
+              <p>
+                наведи камеру<br />устройства на QR-<br />код, чтобы скачать
+              </p>
+            </div>
+          </div>
+          <small class="footer__lable">сделано в xpage</small>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: false,
+      });
+
+      const buttons = document.querySelectorAll(".hero__buttons button");
+
+      buttons.forEach((button) => {
+        button.addEventListener("mouseenter", () => {
+          const index = button.getAttribute("data-index");
+          swiper.slideTo(index);
+        });
+      });
+    </script>
+  </body>
+</html>
